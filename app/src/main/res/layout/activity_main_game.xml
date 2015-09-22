@@ -1,0 +1,33 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#4fff0c">
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Back"
+        android:id="@+id/backButton"
+        android:layout_gravity="left|top"
+        android:textSize="40dp" />
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="500dp"
+        android:layout_height="450dp"
+        android:layout_gravity="center"
+        android:id="@+id/playerList">
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Team Select"
+        android:id="@+id/textView"
+        android:layout_gravity="center_horizontal|top"
+        android:textSize="70dp"
+        android:textColor="#460826" />
+
+</FrameLayout>

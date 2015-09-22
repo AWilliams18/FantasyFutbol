@@ -1,0 +1,35 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/soccer_field">
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Launch"
+        android:id="@+id/launchButon"
+        android:layout_gravity="center"
+        android:textSize="60dp"
+        android:background="#ff8604"
+        android:clickable="true"
+        android:longClickable="false" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="¡Bienvenidos a Fantasy Fútbol!"
+        android:id="@+id/titleText"
+        android:layout_gravity="center_horizontal|top"
+        android:textSize="70dp"
+        android:fontFamily="Arial"
+        android:layout_marginTop="30dp"
+        android:textColor="#2b0b18" />
+
+    <ImageView
+        android:layout_width="184dp"
+        android:layout_height="184dp"
+        android:id="@+id/imageView"
+        android:layout_gravity="center_horizontal|bottom"
+        android:background="@mipmap/soccer_ball" />
+
+</FrameLayout>
