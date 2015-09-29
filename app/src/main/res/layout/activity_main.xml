@@ -26,10 +26,12 @@
         android:textColor="#2b0b18" />
 
     <ImageView
-        android:layout_width="184dp"
-        android:layout_height="184dp"
+        android:layout_width="181dp"
+        android:layout_height="181dp"
         android:id="@+id/imageView"
         android:layout_gravity="center_horizontal|bottom"
         android:background="@mipmap/soccer_ball" />
 
 </FrameLayout>
+
+
