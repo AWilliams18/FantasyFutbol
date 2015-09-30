@@ -25,6 +25,9 @@ public class Player {
 
     public Player(String initPlayerName, int initDrawableID) {
         playerName = initPlayerName;
+        if(playerName == null) {
+            playerName = "Unnamed Guy";
+        }
         numGoals = 0;
         numSaves = 0;
         numAssists = 0;
@@ -52,16 +55,41 @@ public class Player {
         drawableID = initID;
     }
 
+
+    public int getNumGoals() {
+        return numGoals;
+    }
+
     public void addAssist() {
         ++numAssists;
+    }
+
+    public void setNumGoals(int newNumGoals) {
+        numGoals = newNumGoals;
+    }
+
+    public int getNumAssists() {
+        return numAssists;
     }
 
     public void addGoals() {
         ++numGoals;
     }
 
+    public void setNumAssists(int newNumAssists) {
+        numAssists = newNumAssists;
+    }
+
+    public int getNumSaves() {
+        return numSaves;
+    }
+
     public void addSaves() {
         ++numSaves;
+    }
+
+    public void setNumSaves(int newNumSaves) {
+        numSaves = newNumSaves;
     }
 
 

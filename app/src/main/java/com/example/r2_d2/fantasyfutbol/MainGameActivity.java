@@ -92,14 +92,25 @@ public class MainGameActivity extends AppCompatActivity {
         teamSelectButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(MainGameActivity.this, PlayerListActivity.class));
 
                 SeekBar teamSelectBar = (SeekBar)findViewById(R.id.seekBarTeam);
                 PlayerListActivity.setInspectTeam(Team.teamList.get(teamSelectBar.getProgress()));
 
+                startActivity(new Intent(MainGameActivity.this, PlayerListActivity.class));
 
             }
         });//inspect button
+
+
+        //add team button
+        Button newTeamButton = (Button)findViewById(R.id.newTeamButton);
+        newTeamButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                int x = Team.teamList.size() +1;
+                Team newTeam = new Team("Team "+x);
+            }
+        });
 
 
 

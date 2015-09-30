@@ -15,10 +15,11 @@
 
     <LinearLayout
         android:orientation="vertical"
-        android:layout_width="400dp"
-        android:layout_height="300dp"
+        android:layout_width="450dp"
+        android:layout_height="350dp"
         android:layout_gravity="center"
-        android:id="@+id/playerListLayout">
+        android:id="@+id/playerListLayout"
+        android:background="#d7ff3b">
 
         <LinearLayout
             android:orientation="horizontal"
@@ -26,7 +27,8 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
             android:id="@+id/playerLayout1"
-            android:weightSum="1">
+            android:weightSum="1"
+            android:clickable="true">
 
             <ImageView
                 android:layout_width="wrap_content"
@@ -105,4 +107,69 @@
         android:layout_gravity="center_horizontal|top"
         android:textSize="70dp"
         android:textColor="#0f4f15" />
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="200dp"
+        android:layout_height="400dp"
+        android:layout_gravity="right|center_vertical"
+        android:background="#706e6f"
+        android:id="@+id/textFieldLayout">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Name"
+            android:id="@+id/titleName"
+            android:layout_marginTop="20dp" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/editName" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Goals"
+            android:id="@+id/titleGoals"
+            android:layout_marginTop="20dp" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/editGoals" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Assists"
+            android:id="@+id/titleAssists"
+            android:layout_marginTop="20dp" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/editAssists" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Saves"
+            android:id="@+id/titleSaves"
+            android:layout_marginTop="20dp" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/editSaves" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Save / New"
+            android:id="@+id/saveNewButton"
+            android:layout_marginTop="30dp" />
+
+    </LinearLayout>
 </FrameLayout>

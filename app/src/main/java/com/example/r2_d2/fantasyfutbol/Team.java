@@ -26,6 +26,9 @@ public class Team {
 
     public Team(String initTeamName) {
         teamName = initTeamName;
+        if(initTeamName == null) {
+            teamName = "Unnamed Team";
+        }
 
         playerList = new Hashtable<String, Player>();
 

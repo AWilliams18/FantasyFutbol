@@ -1,5 +1,7 @@
 package com.example.r2_d2.fantasyfutbol;
 
+import android.app.AlertDialog;
+import android.app.Dialog;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -8,6 +10,7 @@ import android.view.MenuItem;
 import android.view.SurfaceView;
 import android.view.View;
 import android.widget.Button;
+import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -27,6 +30,17 @@ public class MainActivity extends AppCompatActivity {
         });
 
 
+
+        Button creditsButton = (Button)findViewById(R.id.creditsButton);
+        creditsButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                TextView creditsText = (TextView)findViewById(R.id.creditsText);
+                creditsText.setText("Soccer Field Image:\nhttp://eskipaper.com/soccer-field.html\n" +
+                        "#gal_post_34902_soccer-field-1.jpg\n\nSoccer Ball Image:\nhttp://rocketdock"
+                        +".com/addon/icons/3163\n\nAll other images taken by Andrew Williams.");
+            }
+        });
 
     }
 
