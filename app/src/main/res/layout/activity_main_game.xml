@@ -2,7 +2,8 @@
     xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:background="#4fff0c">
+    android:background="#90f20a"
+    android:id="@+id/mainLayout2">
 
     <Button
         android:layout_width="wrap_content"
@@ -12,15 +13,6 @@
         android:layout_gravity="left|top"
         android:textSize="40dp" />
 
-    <LinearLayout
-        android:orientation="vertical"
-        android:layout_width="500dp"
-        android:layout_height="450dp"
-        android:layout_gravity="center"
-        android:id="@+id/playerList">
-
-    </LinearLayout>
-
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -29,5 +21,57 @@
         android:layout_gravity="center_horizontal|top"
         android:textSize="70dp"
         android:textColor="#460826" />
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_gravity="center_horizontal|bottom">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Select Team Here"
+            android:id="@+id/seekBarText"
+            android:layout_gravity="center_horizontal"
+            android:textSize="40dp"
+            android:textColor="#84330e" />
+
+        <SeekBar
+            android:layout_width="400dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/seekBarTeam"
+            android:layout_gravity="center_horizontal" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Inspect Team"
+            android:id="@+id/teamSelectButton"
+            android:layout_gravity="center_horizontal"
+            android:textSize="25dp"
+            android:layout_marginTop="40dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="500dp"
+        android:layout_height="220dp"
+        android:layout_gravity="center">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/teamText"
+            android:textSize="35dp" />
+    </LinearLayout>
+
+    <!--<Spinner-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:id="@+id/teamList"-->
+        <!--android:layout_gravity="center"-->
+        <!--android:spinnerMode="dropdown"-->
+        <!--android:background="#ff4000" />-->
 
 </FrameLayout>
